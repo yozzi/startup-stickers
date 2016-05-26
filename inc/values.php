@@ -365,9 +365,6 @@
                         'on76' => $newrow76,
                         'on77' => $newrow77,
                       );
-//        print_r($data);
-//        
-//        print_r($_POST);
         
         $data = array_replace($data,$_POST);
         
@@ -428,10 +425,10 @@
         
         
         $data = $order1 . $order2 . $order3 . $order4 . $order5 . $order6 . $order7;
-        //$ret1 = file_put_contents(plugins_url() . '/startup-stickers/data/order.txt', $data, LOCK_EX);
-        $ret1 = update_user_option( get_current_user_id(), 'startup_stickers_values', $data);
-        //$ret2 = file_put_contents(plugins_url() . '/startup-stickers/data/values.txt', '', LOCK_EX);
-        $ret2 = update_user_option( get_current_user_id(), 'startup_stickers_order', '');
+
+        $ret1 = update_user_option( get_current_user_id(), 'startup_stickers_order', $data);
+
+        $ret2 = update_user_option( get_current_user_id(), 'startup_stickers_values', '');
         if($ret1 === false) {
             //die('Impossible d\'&eacute;crire dans le fichier <strong>order.txt</strong>');
         } elseif($ret2 === false) {

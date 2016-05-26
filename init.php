@@ -6,7 +6,9 @@
                 <div class="container">    
                     <div class="row">
                         <div class="col-xs-12">
-                            POST : <?php if ( isset( $_POST ) ) {print_r($_POST); } ?>
+                            POST :<br><?php if ( isset( $_POST ) ) {print_r($_POST); } ?><br>
+                            ORDER :<br><?php echo get_user_option('startup_stickers_order') ?><br>
+                            VALUES :<br><?php echo get_user_option('startup_stickers_values') ?>
                         </div>
                     </div>
                 </div>    
