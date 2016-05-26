@@ -3,8 +3,17 @@
 
 
 
+<?php update_option( 'startup_stickers_values', 1000 ); ?>
 
-<?php //echo get_option( $option, $default ); ?> 
+
+
+<?php echo get_option( 'startup_stickers_values', 'Valeurs pas defaut' ); ?>
+
+<?php update_option( 'startup_stickers_order', 2000 ); ?>
+
+
+
+<?php echo get_option( 'startup_stickers_order', 'Valeurs pas defaut' ); ?> 
     
 
     <div id="page">
