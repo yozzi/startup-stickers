@@ -350,14 +350,14 @@
                         'on55' => $newrow55,
                         'on56' => $newrow56,
                         'on57' => $newrow57,
-                      'on61' => $newrow61,
+                        'on61' => $newrow61,
                         'on62' => $newrow62,
                         'on63' => $newrow63,
                         'on64' => $newrow64,
                         'on65' => $newrow65,
                         'on66' => $newrow66,
                         'on67' => $newrow67,
-                      'on71' => $newrow71,
+                        'on71' => $newrow71,
                         'on72' => $newrow72,
                         'on73' => $newrow73,
                         'on74' => $newrow74,
@@ -373,7 +373,8 @@
         
         $data = serialize($data);
         
-        $ret = update_option( 'startup_stickers_values', $data);
+        $ret = update_user_option( get_current_user_id(), 'startup_stickers_values', $data);
+        $ret = update_user_option( get_current_user_id(), 'startup_stickers_values', $data);
         if($ret === false) {
             //die('Impossible d\'&eacute;crire dans le fichier <strong>values.txt</strong>');
         }
@@ -428,9 +429,9 @@
         
         $data = $order1 . $order2 . $order3 . $order4 . $order5 . $order6 . $order7;
         //$ret1 = file_put_contents(plugins_url() . '/startup-stickers/data/order.txt', $data, LOCK_EX);
-        $ret1 = update_option( 'startup_stickers_values', $data);
+        $ret1 = update_user_option( get_current_user_id(), 'startup_stickers_values', $data);
         //$ret2 = file_put_contents(plugins_url() . '/startup-stickers/data/values.txt', '', LOCK_EX);
-        $ret2 = update_option( 'startup_stickers_values', '');
+        $ret2 = update_user_option( get_current_user_id(), 'startup_stickers_order', '');
         if($ret1 === false) {
             //die('Impossible d\'&eacute;crire dans le fichier <strong>order.txt</strong>');
         } elseif($ret2 === false) {
@@ -456,10 +457,10 @@
 
 
 
-    $values = unserialize(get_option( 'startup_stickers_values'));
+    $values = unserialize(get_user_option( 'startup_stickers_values'));
 
 
-    $order =  trim(get_option( 'startup_stickers_order'));
+    $order =  trim(get_user_option( 'startup_stickers_order'));
     
     $sticker1  =  substr($order,0,7);
     $sticker11 =  substr($sticker1,0,1);
