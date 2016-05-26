@@ -2,13 +2,13 @@
     <thead>
         <tr>
             <th data-type="html"></th>
-            <th data-breakpoints="xs" data-type="html">Samedi</th>
-            <th data-breakpoints="xs" data-type="html">Dimanche</th>
-            <th data-breakpoints="xs" data-type="html">Lundi</th>
-            <th data-breakpoints="xs" data-type="html">Mardi</th>
-            <th data-breakpoints="xs" data-type="html">Mercredi</th>
-            <th data-breakpoints="xs" data-type="html">Jeudi</th>
-            <th data-breakpoints="xs" data-type="html">Vendredi</th>
+            <th data-breakpoints="xs" data-type="html">1</th>
+            <th data-breakpoints="xs" data-type="html">2</th>
+            <th data-breakpoints="xs" data-type="html">3</th>
+            <th data-breakpoints="xs" data-type="html">4</th>
+            <th data-breakpoints="xs" data-type="html">5</th>
+            <th data-breakpoints="xs" data-type="html">6</th>
+            <th data-breakpoints="xs" data-type="html">7</th>
         </tr>
     </thead>
     <tbody>
