@@ -1,0 +1,340 @@
+/**************************************************************************/
+/*                                                                        */
+/* Général                                                                */
+/*                                                                        */
+/**************************************************************************/
+/*
+html{
+  height:100%;
+}
+
+body {
+        min-height:100%;
+}
+
+#page {
+    background:#fff url('../images/background.jpg');
+    background:#000 url(http://gflq.dev/wp-content/themes/startup-reloaded/img/02.svg);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    min-height:100%;
+    width: 100%;
+    min-height:100vh;
+}
+*/
+
+/**************************************************************************/
+/*                                                                        */
+/* Alertes                                                                */
+/*                                                                        */
+/**************************************************************************/
+#messages.alert{
+    margin-bottom: 0;
+/*    background: rgba(255, 105, 180, 0.8);*/
+    color: #fff;
+    border-radius: 0;
+    border-width: 0;
+}
+
+#debug.alert{
+    margin-bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 0;
+    border-width: 0;
+}
+
+/**************************************************************************/
+/*                                                                        */
+/* Nav                                                                  */
+/*                                                                        */
+/**************************************************************************/
+/*
+.navbar{
+    background: rgba(255, 105, 180, 0.8);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border-width: 0;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a{
+    color: #fff;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+*/
+
+/* icon  .custom-navbar .fa {font-size:25px}*/
+
+/*
+@media (max-width:767px) { 
+    .custom-navbar .navbar-right {
+        float: right;
+        padding-right: 15px;
+    }
+    .custom-navbar .nav.navbar-nav.navbar-right li {
+        float: right;
+    }
+    .custom-navbar .nav.navbar-nav.navbar-right li > a {
+        padding:8px 5px;
+    }
+    .custom-navbar .navbar-toggle {
+        float: left
+    }
+    .custom-navbar .navbar-header {
+        float: left;
+        width: auto!important;
+    }
+    .custom-navbar .navbar-collapse {
+        clear: both;
+        float: none;
+    }
+}
+
+.navbar .popover{
+    min-width: 200px;
+}
+*/
+
+/**************************************************************************/
+/*                                                                        */
+/* Tableau                                                                */
+/*                                                                        */
+/**************************************************************************/
+
+/* Général */
+
+#rewards {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+table{
+    margin-bottom: 0;
+}
+
+th {
+    border-bottom-color: rgba(255, 105, 180, 0.1);
+    border-bottom-width: 1px;
+    text-align: center;
+    color: rgba(255, 105, 180, 0.8);
+}
+
+
+th:first-child {
+    width: 100px;
+}
+
+th:first-child {
+    text-align: left;
+}
+
+td{
+    text-align: center;
+    border-top: 1px solid rgba(255, 105, 180, 0.1);
+}
+
+/* Princesses */
+
+.princess{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+/*    background: url(../images/princesses.jpg);*/
+    background: url(http://dummyimage.com/400/ccc/fff.png);
+    background-size: 270px 270px
+}
+
+#row1 .princess{
+    background-position: top right;
+}
+
+#row2 .princess{
+    background-position: center right;
+}
+
+#row3 .princess{
+    background-position: center center;
+}
+
+#row4 .princess{
+    background-position: center left;
+}
+
+#row5 .princess{
+    background-position: bottom right;
+}
+
+#row6 .princess{
+    background-position: top center;
+}
+
+#row7 .princess{
+    background-position: bottom left;
+}
+
+/* Stickers */
+
+.table input[type=checkbox] {
+    display: none;
+}
+
+.table input[type=checkbox] + label {
+    position: relative;
+/*    background: url('../images/dust.png') no-repeat;*/
+    background: url(http://dummyimage.com/400/ccc/fff.png);
+    background-size: 270px 270px;
+    height: 90px;
+    width: 90px;
+    display: block;
+    border-radius: 50%;
+    transition: opacity 0.4s;
+    cursor: pointer;
+    opacity: 0.2;
+    margin: 0 auto;
+}
+
+.table input[type=checkbox] + label i{
+    position: relative;
+/*    background: url(http://dummyimage.com/400/888/fff.png);*/
+    background-size: 270px 270px;
+    height: 90px;
+    width: 90px;
+    display: block;
+    border-radius: 50%;
+    transition: opacity 2s;
+    cursor: pointer;
+    opacity: 0;
+    margin: 0 auto;
+}
+
+.table input.on[type=checkbox] + label i{
+    opacity: 1;
+}
+
+.table input[type=checkbox] + label:hover,
+.table input.on[type=checkbox] + label {
+    opacity: 1;
+}
+
+#row1 input[type=checkbox] + label{
+    background-position: top center;
+}
+
+#row2 input[type=checkbox] + label{
+    background-position: center left;
+}
+
+#row3 input[type=checkbox] + label{
+    background-position: top right;
+}
+
+#row4 input[type=checkbox] + label{
+    background-position: center center;
+}
+
+#row5 input[type=checkbox] + label{
+    background-position: top left;
+}
+
+#row6 input[type=checkbox] + label{
+    background-position: center right;
+}
+
+#row7 input[type=checkbox] + label{
+    background-position: bottom left;
+}
+
+/* Images stickers */
+
+#row1 input.on[type=checkbox] + label i{
+/*    background-image: url(../images/blancheneige.jpg);*/
+    background-image: url(http://dummyimage.com/400/444/fff.png);
+}
+
+#row2 input.on[type=checkbox] + label i{
+/*    background-image: url(../images/cendrillon.jpg);*/
+    background-image: url(http://dummyimage.com/400/444/fff.png);
+}
+
+#row3 input.on[type=checkbox] + label i{
+/*    background-image: url(../images/raiponce.jpg);*/
+    background-image: url(http://dummyimage.com/400/444/fff.png);
+}
+
+#row4 input.on[type=checkbox] + label i{
+/*    background-image: url(../images/frog.jpg);*/
+    background-image: url(http://dummyimage.com/400/444/fff.png);
+}
+
+#row5 input.on[type=checkbox] + label i{
+/*    background-image: url(../images/aurore.jpg);*/
+    background-image: url(http://dummyimage.com/400/444/fff.png);
+}
+
+input.on.sticker1[type=checkbox] + label i{
+    background-position: top left !important;
+    
+}
+input.on.sticker2[type=checkbox] + label i{
+    background-position: top center !important;
+}
+input.on.sticker3[type=checkbox] + label i{
+    background-position: top right !important;
+}
+input.on.sticker4[type=checkbox] + label i{
+    background-position: center left !important;
+}
+input.on.sticker5[type=checkbox] + label i{
+    background-position: center center !important;
+}
+
+/**************************************************************************/
+/*                                                                        */
+/* Popover                                                                */
+/*                                                                        */
+/**************************************************************************/
+.table .popover-title {
+    background-color: pink;
+    color: #fff;
+    font-size: 28px;
+    text-align:center;
+}
+
+.table .popover-content {
+    background-color: #fff;
+    color: pink;
+    padding: 25px;
+    text-align:center;
+}
+
+/**************************************************************************/
+/*                                                                        */
+/* Soumission                                                             */
+/*                                                                        */
+/**************************************************************************/
+
+#form-submition{
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+#form-submition .popover .popover-title{
+    display: none;
+}
+
+#form-submition .popover .popover-content{
+    padding: 5px;
+}
+
+#form-submition .popover .btn{
+    text-align: left;
+}
