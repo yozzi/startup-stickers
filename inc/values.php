@@ -454,10 +454,10 @@
 
 
 
-    $values = unserialize(get_user_option( 'startup_stickers_values'));
+    $values = unserialize(get_user_option( 'startup_stickers_values' ));
 
 
-    $order =  trim(get_user_option( 'startup_stickers_order'));
+    $order =  trim(get_user_option( 'startup_stickers_order' ));
     
     $sticker1  =  substr($order,0,7);
     $sticker11 =  substr($sticker1,0,1);
