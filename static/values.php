@@ -373,9 +373,9 @@
         
         $data = serialize($data);
         
-        $ret = file_put_contents('http://startup.dev/wp-content/plugins/startup-stickers/data/values.txt', $data, LOCK_EX);
+        $ret = update_option( 'startup_stickers_values', $data);
         if($ret === false) {
-            die('Impossible d\'&eacute;crire dans le fichier <strong>values.txt</strong>');
+            //die('Impossible d\'&eacute;crire dans le fichier <strong>values.txt</strong>');
         }
         else { ?>
             
@@ -427,12 +427,14 @@
         
         
         $data = $order1 . $order2 . $order3 . $order4 . $order5 . $order6 . $order7;
-        $ret1 = file_put_contents(plugins_url() . '/startup-stickers/data/order.txt', $data, LOCK_EX);
-        $ret2 = file_put_contents(plugins_url() . '/startup-stickers/data/values.txt', '', LOCK_EX);
+        //$ret1 = file_put_contents(plugins_url() . '/startup-stickers/data/order.txt', $data, LOCK_EX);
+        $ret1 = update_option( 'startup_stickers_values', $data);
+        //$ret2 = file_put_contents(plugins_url() . '/startup-stickers/data/values.txt', '', LOCK_EX);
+        $ret2 = update_option( 'startup_stickers_values', '');
         if($ret1 === false) {
-            die('Impossible d\'&eacute;crire dans le fichier <strong>order.txt</strong>');
+            //die('Impossible d\'&eacute;crire dans le fichier <strong>order.txt</strong>');
         } elseif($ret2 === false) {
-            die('Impossible d\'&eacute;crire dans le fichier <strong>values.txt</strong>');
+            //die('Impossible d\'&eacute;crire dans le fichier <strong>values.txt</strong>');
         }
         else { ?>
             
@@ -454,10 +456,10 @@
 
 
 
-    $values = unserialize(file_get_contents( plugins_url() . '/startup-stickers/data/values.txt'));
+    $values = unserialize(get_option( 'startup_stickers_values'));
 
 
-    $order =  trim(file_get_contents(plugins_url() . '/startup-stickers/data/order.txt'));
+    $order =  trim(get_option( 'startup_stickers_order'));
     
     $sticker1  =  substr($order,0,7);
     $sticker11 =  substr($sticker1,0,1);
