@@ -13,7 +13,7 @@ body {
 }
 
 #page {
-    background:#fff url('../images/background.jpg');
+    background:#fff url('../img/background.jpg');
     background:#000 url(http://gflq.dev/wp-content/themes/startup-reloaded/img/02.svg);
     background-size: cover;
     background-position: top center;
@@ -148,7 +148,7 @@ td{
     width: 90px;
     height: 90px;
     border-radius: 50%;
-/*    background: url(../images/princesses.jpg);*/
+/*    background: url(../img/princesses.jpg);*/
     background: url(http://dummyimage.com/400/ccc/fff.png);
     background-size: 270px 270px
 }
@@ -189,7 +189,7 @@ td{
 
 .table input[type=checkbox] + label {
     position: relative;
-/*    background: url('../images/dust.png') no-repeat;*/
+/*    background: url('../img/dust.png') no-repeat;*/
     background: url(http://dummyimage.com/400/ccc/fff.png);
     background-size: 270px 270px;
     height: 90px;
@@ -256,27 +256,27 @@ td{
 /* Images stickers */
 
 #row1 input.on[type=checkbox] + label i{
-/*    background-image: url(../images/blancheneige.jpg);*/
+/*    background-image: url(../img/blancheneige.jpg);*/
     background-image: url(http://dummyimage.com/400/444/fff.png);
 }
 
 #row2 input.on[type=checkbox] + label i{
-/*    background-image: url(../images/cendrillon.jpg);*/
+/*    background-image: url(../img/cendrillon.jpg);*/
     background-image: url(http://dummyimage.com/400/444/fff.png);
 }
 
 #row3 input.on[type=checkbox] + label i{
-/*    background-image: url(../images/raiponce.jpg);*/
+/*    background-image: url(../img/raiponce.jpg);*/
     background-image: url(http://dummyimage.com/400/444/fff.png);
 }
 
 #row4 input.on[type=checkbox] + label i{
-/*    background-image: url(../images/frog.jpg);*/
+/*    background-image: url(../img/frog.jpg);*/
     background-image: url(http://dummyimage.com/400/444/fff.png);
 }
 
 #row5 input.on[type=checkbox] + label i{
-/*    background-image: url(../images/aurore.jpg);*/
+/*    background-image: url(../img/aurore.jpg);*/
     background-image: url(http://dummyimage.com/400/444/fff.png);
 }
 

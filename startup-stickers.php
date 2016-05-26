@@ -16,7 +16,7 @@ if ( ! defined( 'WPINC' ) ) {
 //Include this to check if a plugin is activated with is_plugin_active
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
-//require('inc/updater.php');
+require('inc/enqueues.php');
 
 //require('inc/options.php');
 
@@ -50,7 +50,7 @@ function startup_stickers_shortcode( $atts ) {
     //if ( function_exists( 'startup_reloaded_setup' ) ) {
         //require get_template_directory() . '/template-parts/content-timeline.php';
     //} else {
-        require('static/index.php');
+        require('init.php');
     //}
     return ob_get_clean();    
 }
@@ -77,16 +77,6 @@ function startup_stickers_shortcode_ui() {
 if ( function_exists( 'shortcode_ui_register_for_shortcode' ) ) {
     add_action( 'init', 'startup_stickers_shortcode_ui');
 }
-
-// Enqueue scripts and styles.
-function startup_stickers_scripts() {
-    wp_enqueue_style( 'startup-stickers-style', plugins_url( '/static/css/styles.css', __FILE__ ), array( ), false, 'all' );
-    wp_enqueue_script( 'bootstrap-confirmation', plugins_url( '/static/js/bootstrap-confirmation.min.js', __FILE__ ), array( ), '', 'false' );
-    wp_enqueue_script( 'screenfull', plugins_url( '/static/js/screenfull.min.js', __FILE__ ), array( ), '', 'false' );
-    wp_enqueue_script( 'startup', plugins_url( '/static/js/startup.js', __FILE__ ), array( ), '', 'false' );
-}
-
-add_action( 'wp_enqueue_scripts', 'startup_stickers_scripts', 15 );
 
 // Add code to footer
 function startup_stickers_footer() { ?>

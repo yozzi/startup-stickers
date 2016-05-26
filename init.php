@@ -1,18 +1,4 @@
-
-<?php require_once 'config.php' ?>
-
-
-
-
-
-
-<?php echo get_option( 'startup_stickers_values' ); ?>
-
-
-
-
-<?php echo get_option( 'startup_stickers_order' ); ?> 
-    
+<?php require_once 'inc/config.php' ?>
 
     <div id="page">
         <?php if ( isset( $_POST ) && DEBUG == TRUE ) { ?>
@@ -26,15 +12,13 @@
                 </div>    
             </div>
         <?php }  
-            require_once 'values.php';
-            require_once 'lib/Mobile_Detect.php';
-            $detect = new Mobile_Detect;
+            require_once 'inc/values.php';
         ?>
         <div class="container">
             <?php if ( is_user_logged_in() ) { ?>
             <form action="<?php echo $_SERVER['REQUEST_URI'] ?>" method="POST">
                 <div id="rewards" class="table-responsive logged">
-                    <?php require_once 'table.php' ?>
+                    <?php require_once 'inc/table.php' ?>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
@@ -49,7 +33,7 @@
             <?php } else { ?>
             <form>
                 <div id="rewards" class="table-responsive">
-                    <?php require_once 'table.php' ?>
+                    <?php require_once 'inc/table.php' ?>
                 </div>
             </form>
             <?php } ?>
