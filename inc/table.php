@@ -15,104 +15,104 @@
         <tr id="row1">
             <td><div class="princess hvr-grow-rotate" data-toggle="popover" data-trigger="hover" data-placement="right" title="Blanche Neige" data-content="<?php echo CHALLENGE1 ?>"></div></td>
             <td>
-                <input id="row11" name="row11" class="form-control<?php if ( $values['on11'] ) { echo ' on'; }; if ( $sticker11 ) { echo ' sticker' . $sticker11; } ?>" type="checkbox"<?php if ( $values['on11'] ) { echo ' checked'; } ?>>
+                <input id="row11" name="row11" class="form-control<?php if ( $values[1][1] ) { echo ' on'; }; if ( $sticker11 ) { echo ' sticker' . $sticker11; } ?>" type="checkbox"<?php if ( $values[1][1] ) { echo ' checked'; } ?>>
                 <label for="row11"><i></i></label>
             </td>
             <td>
-                <input id="row12" name="row12" class="form-control<?php if ( $values['on12'] ) { echo ' on'; }; if ( $sticker12 ) { echo ' sticker' . $sticker12; } ?>" type="checkbox"<?php if ( $values['on12'] ) { echo ' checked'; } ?>>
+                <input id="row12" name="row12" class="form-control<?php if ( $values[1][2] ) { echo ' on'; }; if ( $sticker12 ) { echo ' sticker' . $sticker12; } ?>" type="checkbox"<?php if ( $values[1][2] ) { echo ' checked'; } ?>>
                 <label for="row12"><i></i></label>
             </td>
             <td>
-                <input id="row13" name="row13" class="form-control<?php if ( $values['on13'] ) { echo ' on'; }; if ( $sticker13 ) { echo ' sticker' . $sticker13; } ?>" type="checkbox"<?php if ( $values['on13'] ) { echo ' checked'; } ?>>
+                <input id="row13" name="row13" class="form-control<?php if ( $values[1][3] ) { echo ' on'; }; if ( $sticker13 ) { echo ' sticker' . $sticker13; } ?>" type="checkbox"<?php if ( $values[1][3] ) { echo ' checked'; } ?>>
                 <label for="row13"><i></i></label>
             </td>
             <td>
-                <input id="row14" name="row14" class="form-control<?php if ($values['on14'] ) { echo ' on'; }; if ( $sticker14 ) { echo ' sticker' . $sticker14; } ?>" type="checkbox"<?php if ( $values['on14'] ) { echo ' checked'; } ?>>
+                <input id="row14" name="row14" class="form-control<?php if ($values[1][4] ) { echo ' on'; }; if ( $sticker14 ) { echo ' sticker' . $sticker14; } ?>" type="checkbox"<?php if ( $values[1][4] ) { echo ' checked'; } ?>>
                 <label for="row14"><i></i></label>
             </td>
             <td>
-                <input id="row15" name="row15" class="form-control<?php if ( $values['on15'] ) { echo ' on'; }; if ( $sticker15 ) { echo ' sticker' . $sticker15; } ?>" type="checkbox"<?php if ( $values['on15'] ) { echo ' checked'; } ?>>
+                <input id="row15" name="row15" class="form-control<?php if ( $values[1][5] ) { echo ' on'; }; if ( $sticker15 ) { echo ' sticker' . $sticker15; } ?>" type="checkbox"<?php if ( $values[1][5] ) { echo ' checked'; } ?>>
                 <label for="row15"><i></i></label>
             </td>
             <td>
-                <input id="row16" name="row16" class="form-control<?php if ( $values['on16'] ) { echo ' on'; }; if ( $sticker16 ) { echo ' sticker' . $sticker16; } ?>" type="checkbox"<?php if ( $values['on16'] ) { echo ' checked'; } ?>>
+                <input id="row16" name="row16" class="form-control<?php if ( $values[1][6] ) { echo ' on'; }; if ( $sticker16 ) { echo ' sticker' . $sticker16; } ?>" type="checkbox"<?php if ( $values[1][6] ) { echo ' checked'; } ?>>
                 <label for="row16"><i></i></label>
             </td>
             <td>
-                <input id="row17" name="row17" class="form-control<?php if ( $values['on17'] ) { echo ' on'; }; if ( $sticker17 ) { echo ' sticker' . $sticker17; } ?>" type="checkbox"<?php if ( $values['on17'] ) { echo ' checked'; } ?>>
+                <input id="row17" name="row17" class="form-control<?php if ( $values[1][7] ) { echo ' on'; }; if ( $sticker17 ) { echo ' sticker' . $sticker17; } ?>" type="checkbox"<?php if ( $values[1][7] ) { echo ' checked'; } ?>>
                 <label for="row17"><i></i></label>
             </td>
         </tr>
         <tr id="row2">
             <td><div class="princess hvr-grow-rotate" data-toggle="popover" data-trigger="hover" data-placement="right" title="Cendrillon" data-content="<?php echo CHALLENGE2 ?>"></div></td>
             <td>
-                <input id="row21" name="row21" class="form-control<?php if ( $values['on21'] ) { echo ' on'; }; if ( $sticker21 ) { echo ' sticker' . $sticker21; } ?>" type="checkbox"<?php if ( $values['on21'] ) { echo ' checked'; } ?>>
+                <input id="row21" name="row21" class="form-control<?php if ( $values[2][1] ) { echo ' on'; }; if ( $sticker21 ) { echo ' sticker' . $sticker21; } ?>" type="checkbox"<?php if ( $values[2][1] ) { echo ' checked'; } ?>>
                 <label for="row21"><i></i></label>
             </td>
             <td>
-                <input id="row22" name="row22" class="form-control<?php if ( $values['on22'] ) { echo ' on'; }; if ( $sticker22 ) { echo ' sticker' . $sticker22; } ?>" type="checkbox"<?php if ( $values['on22'] ) { echo ' checked'; } ?>>
+                <input id="row22" name="row22" class="form-control<?php if ( $values[2][2] ) { echo ' on'; }; if ( $sticker22 ) { echo ' sticker' . $sticker22; } ?>" type="checkbox"<?php if ( $values[2][2] ) { echo ' checked'; } ?>>
                 <label for="row22"><i></i></label>
             </td>
             <td>
-                <input id="row23" name="row23" class="form-control<?php if ( $values['on23'] ) { echo ' on'; }; if ( $sticker23 ) { echo ' sticker' . $sticker23; } ?>" type="checkbox"<?php if ( $values['on23'] ) { echo ' checked'; } ?>>
+                <input id="row23" name="row23" class="form-control<?php if ( $values[2][3] ) { echo ' on'; }; if ( $sticker23 ) { echo ' sticker' . $sticker23; } ?>" type="checkbox"<?php if ( $values[2][3] ) { echo ' checked'; } ?>>
                 <label for="row23"><i></i></label>
             </td>
             <td>
-                <input id="row24" name="row24" class="form-control<?php if ( $values['on24'] ) { echo ' on'; }; if ( $sticker24 ) { echo ' sticker' . $sticker24; } ?>" type="checkbox"<?php if ( $values['on24'] ) { echo ' checked'; } ?>>
+                <input id="row24" name="row24" class="form-control<?php if ( $values[2][4] ) { echo ' on'; }; if ( $sticker24 ) { echo ' sticker' . $sticker24; } ?>" type="checkbox"<?php if ( $values[2][4] ) { echo ' checked'; } ?>>
                 <label for="row24"><i></i></label>
             </td>
             <td>
-                <input id="row25" name="row25" class="form-control<?php if ( $values['on25'] ) { echo ' on'; }; if ( $sticker25 ) { echo ' sticker' . $sticker25; } ?>" type="checkbox"<?php if ( $values['on25'] ) { echo ' checked'; } ?>>
+                <input id="row25" name="row25" class="form-control<?php if ( $values[2][5] ) { echo ' on'; }; if ( $sticker25 ) { echo ' sticker' . $sticker25; } ?>" type="checkbox"<?php if ( $values[2][5] ) { echo ' checked'; } ?>>
                 <label for="row25"><i></i></label>
             </td>
             <td>
-                <input id="row26" name="row26" class="form-control<?php if ( $values['on26'] ) { echo ' on'; }; if ( $sticker26 ) { echo ' sticker' . $sticker26; } ?>" type="checkbox"<?php if ( $values['on26'] ) { echo ' checked'; } ?>>
+                <input id="row26" name="row26" class="form-control<?php if ( $values[2][6] ) { echo ' on'; }; if ( $sticker26 ) { echo ' sticker' . $sticker26; } ?>" type="checkbox"<?php if ( $values[2][6] ) { echo ' checked'; } ?>>
                 <label for="row26"><i></i></label>
             </td>
             <td>
-                <input id="row27" name="row27" class="form-control<?php if ( $values['on27'] ) { echo ' on'; }; if ( $sticker27 ) { echo ' sticker' . $sticker27; } ?>" type="checkbox"<?php if ( $values['on27'] ) { echo ' checked'; } ?>>
+                <input id="row27" name="row27" class="form-control<?php if ( $values[2][7] ) { echo ' on'; }; if ( $sticker27 ) { echo ' sticker' . $sticker27; } ?>" type="checkbox"<?php if ( $values[2][7] ) { echo ' checked'; } ?>>
                 <label for="row27"><i></i></label>
             </td>
         </tr>
         <tr id="row3">
             <td><div class="princess hvr-grow-rotate" data-toggle="popover" data-trigger="hover" data-placement="right" title="Raiponce" data-content="<?php echo CHALLENGE3 ?>"></div></td>
             <td>
-                <input id="row31" name="row31" class="form-control<?php if ( $values['on31'] ) { echo ' on'; }; if ( $sticker31 ) { echo ' sticker' . $sticker31; } ?>" type="checkbox"<?php if ( $values['on31'] ) { echo ' checked'; } ?>>
+                <input id="row31" name="row31" class="form-control<?php if ( $values[3][1] ) { echo ' on'; }; if ( $sticker31 ) { echo ' sticker' . $sticker31; } ?>" type="checkbox"<?php if ( $values[3][1] ) { echo ' checked'; } ?>>
                 <label for="row31"><i></i></label>
             </td>
             <td>
-                <input id="row32" name="row32" class="form-control<?php if ( $values['on32'] ) { echo ' on'; }; if ( $sticker32 ) { echo ' sticker' . $sticker32; } ?>" type="checkbox"<?php if ( $values['on32'] ) { echo ' checked'; } ?>>
+                <input id="row32" name="row32" class="form-control<?php if ( $values[3][2] ) { echo ' on'; }; if ( $sticker32 ) { echo ' sticker' . $sticker32; } ?>" type="checkbox"<?php if ( $values[3][2] ) { echo ' checked'; } ?>>
                 <label for="row32"><i></i></label>
             </td>
             <td>
-                <input id="row33" name="row33" class="form-control<?php if ( $values['on33'] ) { echo ' on'; }; if ( $sticker33 ) { echo ' sticker' . $sticker33; } ?>" type="checkbox"<?php if ( $values['on33'] ) { echo ' checked'; } ?>>
+                <input id="row33" name="row33" class="form-control<?php if ( $values[3][3] ) { echo ' on'; }; if ( $sticker33 ) { echo ' sticker' . $sticker33; } ?>" type="checkbox"<?php if ( $values3[3][3] ) { echo ' checked'; } ?>>
                 <label for="row33"><i></i></label>
             </td>
             <td>
-                <input id="row34" name="row34" class="form-control<?php if ( $values['on34'] ) { echo ' on'; }; if ( $sticker34 ) { echo ' sticker' . $sticker34; } ?>" type="checkbox"<?php if ( $values['on34'] ) { echo ' checked'; } ?>>
+                <input id="row34" name="row34" class="form-control<?php if ( $values[3][4] ) { echo ' on'; }; if ( $sticker34 ) { echo ' sticker' . $sticker34; } ?>" type="checkbox"<?php if ( $values[3][4] ) { echo ' checked'; } ?>>
                 <label for="row34"><i></i></label>
             </td>
             <td>
-                <input id="row35" name="row35" class="form-control<?php if ( $values['on35'] ) { echo ' on'; }; if ( $sticker35 ) { echo ' sticker' . $sticker35; } ?>" type="checkbox"<?php if ( $values['on35'] ) { echo ' checked'; } ?>>
+                <input id="row35" name="row35" class="form-control<?php if ( $values[3][5] ) { echo ' on'; }; if ( $sticker35 ) { echo ' sticker' . $sticker35; } ?>" type="checkbox"<?php if ( $values[3][5] ) { echo ' checked'; } ?>>
                 <label for="row35"><i></i></label>
             </td>
             <td>
-                <input id="row36" name="row36" class="form-control<?php if ( $values['on36'] ) { echo ' on'; }; if ( $sticker36 ) { echo ' sticker' . $sticker36; } ?>" type="checkbox"<?php if ( $values['on36'] ) { echo ' checked'; } ?>>
+                <input id="row36" name="row36" class="form-control<?php if ( $values[3][6] ) { echo ' on'; }; if ( $sticker36 ) { echo ' sticker' . $sticker36; } ?>" type="checkbox"<?php if ( $values[3][6] ) { echo ' checked'; } ?>>
                 <label for="row36"><i></i></label>
             </td>
             <td>
-                <input id="row37" name="row37" class="form-control<?php if ( $values['on37'] ) { echo ' on'; }; if ( $sticker37 ) { echo ' sticker' . $sticker37; } ?>" type="checkbox"<?php if ( $values['on37'] ) { echo ' checked'; } ?>>
+                <input id="row37" name="row37" class="form-control<?php if ( $values[3][7] ) { echo ' on'; }; if ( $sticker37 ) { echo ' sticker' . $sticker37; } ?>" type="checkbox"<?php if ( $values[3][7] ) { echo ' checked'; } ?>>
                 <label for="row37"><i></i></label>
             </td>
         </tr>
         <tr id="row4">
             <td><div class="princess hvr-grow-rotate" data-toggle="popover" data-trigger="hover" data-placement="right" title="Tiana" data-content="<?php echo CHALLENGE4 ?>"></div></td>
             <td>
-                <input id="row41" name="row41" class="form-control<?php if ( $values['on41'] ) { echo ' on'; }; if ( $sticker41 ) { echo ' sticker' . $sticker41; } ?>" type="checkbox"<?php if ( $values['on41'] ) { echo ' checked'; } ?>>
+                <input id="row41" name="row41" class="form-control<?php if ( $values[4][1] ) { echo ' on'; }; if ( $sticker41 ) { echo ' sticker' . $sticker41; } ?>" type="checkbox"<?php if ( $values[4][1] ) { echo ' checked'; } ?>>
                 <label for="row41"><i></i></label>
             </td>
             <td>
-                <input id="row42" name="row42" class="form-control<?php if ( $values['on42'] ) { echo ' on'; }; if ( $sticker42 ) { echo ' sticker' . $sticker42; } ?>" type="checkbox"<?php if ( $values['on42'] ) { echo ' checked'; } ?>>
+                <input id="row42" name="row42" class="form-control<?php if ( $values[4][2] ) { echo ' on'; }; if ( $sticker42 ) { echo ' sticker' . $sticker42; } ?>" type="checkbox"<?php if ( $values[4][2] ) { echo ' checked'; } ?>>
                 <label for="row42"><i></i></label>
             </td>
             <td>

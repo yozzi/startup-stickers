@@ -7,11 +7,7 @@
 
     if(isset($_POST['update'])) {
         
-        if(isset($_POST['row11'])) {      
-            $newrow11 = 1;
-        } else {
-            $newrow11 = 0; 
-        };
+        if(isset($_POST['row11'])) { $newrow11 = 1; } else { $newrow11 = 0; };
         
         if(isset($_POST['row12'])) {      
             $newrow12 = 1;
@@ -315,56 +311,73 @@
             $newrow77 = 0; 
         };
         
-        $data = array(  'on11' => $newrow11,
-                        'on12' => $newrow12,
-                        'on13' => $newrow13,
-                        'on14' => $newrow14,
-                        'on15' => $newrow15,
-                        'on16' => $newrow16,
-                        'on17' => $newrow17,
-                        'on21' => $newrow21,
-                        'on22' => $newrow22,
-                        'on23' => $newrow23,
-                        'on24' => $newrow24,
-                        'on25' => $newrow25,
-                        'on26' => $newrow26,
-                        'on27' => $newrow27,
-                        'on31' => $newrow31,
-                        'on32' => $newrow32,
-                        'on33' => $newrow33,
-                        'on34' => $newrow34,
-                        'on35' => $newrow35,
-                        'on36' => $newrow36,
-                        'on37' => $newrow37,
-                        'on41' => $newrow41,
-                        'on42' => $newrow42,
-                        'on43' => $newrow43,
-                        'on44' => $newrow44,
-                        'on45' => $newrow45,
-                        'on46' => $newrow46,
-                        'on47' => $newrow47,
-                        'on51' => $newrow51,
-                        'on52' => $newrow52,
-                        'on53' => $newrow53,
-                        'on54' => $newrow54,
-                        'on55' => $newrow55,
-                        'on56' => $newrow56,
-                        'on57' => $newrow57,
-                        'on61' => $newrow61,
-                        'on62' => $newrow62,
-                        'on63' => $newrow63,
-                        'on64' => $newrow64,
-                        'on65' => $newrow65,
-                        'on66' => $newrow66,
-                        'on67' => $newrow67,
-                        'on71' => $newrow71,
-                        'on72' => $newrow72,
-                        'on73' => $newrow73,
-                        'on74' => $newrow74,
-                        'on75' => $newrow75,
-                        'on76' => $newrow76,
-                        'on77' => $newrow77,
-                      );
+        $data = array(
+            '1' => array(
+                '1' => $newrow11,
+                '2' => $newrow12,
+                '3' => $newrow13,
+                '4' => $newrow14,
+                '5' => $newrow15,
+                '6' => $newrow16,
+                '7' => $newrow17,
+            ),
+             '2' => array(
+                '1' => $newrow21,
+                '2' => $newrow22,
+                '3' => $newrow23,
+                '4' => $newrow24,
+                '5' => $newrow25,
+                '6' => $newrow26,
+                '7' => $newrow27,
+            ),
+            '3' => array(
+                '1' => $newrow31,
+                '2' => $newrow32,
+                '3' => $newrow33,
+                '4' => $newrow34,
+                '5' => $newrow35,
+                '6' => $newrow36,
+                '7' => $newrow37,
+            ),
+            '4' => array(
+                '1' => $newrow41,
+                '2' => $newrow42,
+                '3' => $newrow43,
+                '4' => $newrow44,
+                '5' => $newrow45,
+                '6' => $newrow46,
+                '7' => $newrow47,
+            ),
+            '5' => array(
+                '1' => $newrow51,
+                '2' => $newrow52,
+                '3' => $newrow53,
+                '4' => $newrow54,
+                '5' => $newrow55,
+                '6' => $newrow56,
+                '7' => $newrow57,
+            ),
+            '6' => array(
+                '1' => $newrow61,
+                '2' => $newrow62,
+                '3' => $newrow63,
+                '4' => $newrow64,
+                '5' => $newrow65,
+                '6' => $newrow66,
+                '7' => $newrow67,
+            ),
+            '7' => array(
+                '1' => $newrow71,
+                '2' => $newrow72,
+                '3' => $newrow73,
+                '4' => $newrow74,
+                '5' => $newrow75,
+                '6' => $newrow76,
+                '7' => $newrow77,
+            ),
+        );
+        
+        print_r($data);
         
         $data = array_replace($data,$_POST);
         
@@ -422,7 +435,15 @@
         shuffle($order7);
         $order7 = implode($order7);
         
-        
+        $ordertest = array(
+            'row1' =>  $order1,
+            'row2' =>  $order2,
+            'row3' =>  $order3,
+            'row4' =>  $order4,
+            'row5' =>  $order5,
+            'row6' =>  $order6,
+            'row7' =>  $order7,
+        );
         
         $data = $order1 . $order2 . $order3 . $order4 . $order5 . $order6 . $order7;
 

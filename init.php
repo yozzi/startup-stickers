@@ -6,16 +6,17 @@
                 <div class="container">    
                     <div class="row">
                         <div class="col-xs-12">
-                            POST :<br><?php if ( isset( $_POST ) ) {print_r($_POST); } ?><br>
-                            ORDER :<br><?php echo get_user_option('startup_stickers_order') ?><br>
-                            VALUES :<br><?php echo get_user_option('startup_stickers_values') ?>
+                                    <?php }  
+            require_once 'inc/values.php';
+        ?>
+                            POST: <?php if ( isset( $_POST ) ) {print_r($_POST); } ?><br>
+                            VALUES: <?php echo get_user_option('startup_stickers_values') ?><br>
+                            ORDER: <?php echo get_user_option('startup_stickers_order') ?><br>
+                            ORDERTEST: <?php print_r($ordertest) ?>
                         </div>
                     </div>
                 </div>    
             </div>
-        <?php }  
-            require_once 'inc/values.php';
-        ?>
         <div class="container">
             <?php if ( is_user_logged_in() ) { ?>
             <form action="<?php echo $_SERVER['REQUEST_URI'] ?>" method="POST">
