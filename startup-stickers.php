@@ -18,25 +18,6 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 require('inc/enqueues.php');
 
-//require('inc/options.php');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Shortcode
 function startup_stickers_shortcode( $atts ) {
 
@@ -47,11 +28,7 @@ function startup_stickers_shortcode( $atts ) {
     
 	// Code
     ob_start();
-    //if ( function_exists( 'startup_reloaded_setup' ) ) {
-        //require get_template_directory() . '/template-parts/content-timeline.php';
-    //} else {
-        require('init.php');
-    //}
+    require('init.php');
     return ob_get_clean();    
 }
 add_shortcode( 'stickers', 'startup_stickers_shortcode' );
@@ -77,16 +54,4 @@ function startup_stickers_shortcode_ui() {
 if ( function_exists( 'shortcode_ui_register_for_shortcode' ) ) {
     add_action( 'init', 'startup_stickers_shortcode_ui');
 }
-
-// Add code to footer
-function startup_stickers_footer() { ?>
-    <script type="text/javascript">
-        jQuery(document).ready(function($){
-
-        });
-    </script>
-<?php }
-
-add_action( 'wp_footer', 'startup_stickers_footer' );
-
 ?>

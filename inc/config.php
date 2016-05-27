@@ -1,6 +1,6 @@
 <?php
 
-define("DEBUG", TRUE);
+define("DEBUG", FALSE);
 
 define("FULLSCREEN", TRUE);
 

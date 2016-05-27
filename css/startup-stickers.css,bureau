@@ -31,7 +31,7 @@ body {
 /**************************************************************************/
 #messages.alert{
     margin-bottom: 0;
-    background: rgba(255, 105, 180, 0.8);
+/*    background: rgba(255, 105, 180, 0.8);*/
     color: #fff;
     border-radius: 0;
     border-width: 0;
@@ -149,8 +149,8 @@ td{
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background: url(../img/princesses.jpg);
-/*    background: url(http://dummyimage.com/400/ccc/fff.png);*/
+/*    background: url(../img/princesses.jpg);*/
+    background: url(http://dummyimage.com/400/ccc/fff.png);
     background-size: 270px 270px
 }
 
@@ -190,8 +190,8 @@ td{
 
 .table input[type=checkbox] + label {
     position: relative;
-    background: url('../img/dust.png') no-repeat;
-/*    background: url(http://dummyimage.com/400/ccc/fff.png);*/
+/*    background: url('../img/dust.png') no-repeat;*/
+    background: url(http://dummyimage.com/400/ccc/fff.png);
     background-size: 270px 270px;
     height: 90px;
     width: 90px;
@@ -257,38 +257,28 @@ td{
 /* Images stickers */
 
 #row1 input.on[type=checkbox] + label i{
-    background-image: url(../img/blancheneige.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
+/*    background-image: url(../img/blancheneige.jpg);*/
+    background-image: url(http://dummyimage.com/400/444/fff.png);
 }
 
 #row2 input.on[type=checkbox] + label i{
-    background-image: url(../img/cendrillon.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
+/*    background-image: url(../img/cendrillon.jpg);*/
+    background-image: url(http://dummyimage.com/400/444/fff.png);
 }
 
 #row3 input.on[type=checkbox] + label i{
-    background-image: url(../img/raiponce.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
+/*    background-image: url(../img/raiponce.jpg);*/
+    background-image: url(http://dummyimage.com/400/444/fff.png);
 }
 
 #row4 input.on[type=checkbox] + label i{
-    background-image: url(../img/frog.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
+/*    background-image: url(../img/frog.jpg);*/
+    background-image: url(http://dummyimage.com/400/444/fff.png);
 }
 
 #row5 input.on[type=checkbox] + label i{
-    background-image: url(../img/aurore.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
-}
-
-#row6 input.on[type=checkbox] + label i{
-    background-image: url(../img/aurore.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
-}
-
-#row7 input.on[type=checkbox] + label i{
-    background-image: url(../img/aurore.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
+/*    background-image: url(../img/aurore.jpg);*/
+    background-image: url(http://dummyimage.com/400/444/fff.png);
 }
 
 input.on.sticker1[type=checkbox] + label i{
@@ -305,12 +295,6 @@ input.on.sticker4[type=checkbox] + label i{
     background-position: center left !important;
 }
 input.on.sticker5[type=checkbox] + label i{
-    background-position: center center !important;
-}
-input.on.sticker6[type=checkbox] + label i{
-    background-position: center center !important;
-}
-input.on.sticker7[type=checkbox] + label i{
     background-position: center center !important;
 }
 

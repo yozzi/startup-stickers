@@ -1,37 +1,11 @@
 /**************************************************************************/
 /*                                                                        */
-/* Général                                                                */
-/*                                                                        */
-/**************************************************************************/
-/*
-html{
-  height:100%;
-}
-
-body {
-        min-height:100%;
-}
-
-#page {
-    background:#fff url('../img/background.jpg');
-    background:#000 url(http://gflq.dev/wp-content/themes/startup-reloaded/img/02.svg);
-    background-size: cover;
-    background-position: top center;
-    background-attachment: fixed;
-    min-height:100%;
-    width: 100%;
-    min-height:100vh;
-}
-*/
-
-/**************************************************************************/
-/*                                                                        */
 /* Alertes                                                                */
 /*                                                                        */
 /**************************************************************************/
 #messages.alert{
     margin-bottom: 0;
-/*    background: rgba(255, 105, 180, 0.8);*/
+    background: rgba(255, 105, 180, 0.8);
     color: #fff;
     border-radius: 0;
     border-width: 0;
@@ -48,69 +22,9 @@ body {
 
 /**************************************************************************/
 /*                                                                        */
-/* Nav                                                                  */
+/* Général                                                                */
 /*                                                                        */
 /**************************************************************************/
-/*
-.navbar{
-    background: rgba(255, 105, 180, 0.8);
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    border-width: 0;
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav>li>a{
-    color: #fff;
-}
-
-.navbar-inverse .navbar-toggle {
-    border-color: transparent;
-}
-*/
-
-/* icon  .custom-navbar .fa {font-size:25px}*/
-
-/*
-@media (max-width:767px) { 
-    .custom-navbar .navbar-right {
-        float: right;
-        padding-right: 15px;
-    }
-    .custom-navbar .nav.navbar-nav.navbar-right li {
-        float: right;
-    }
-    .custom-navbar .nav.navbar-nav.navbar-right li > a {
-        padding:8px 5px;
-    }
-    .custom-navbar .navbar-toggle {
-        float: left
-    }
-    .custom-navbar .navbar-header {
-        float: left;
-        width: auto!important;
-    }
-    .custom-navbar .navbar-collapse {
-        clear: both;
-        float: none;
-    }
-}
-
-.navbar .popover{
-    min-width: 200px;
-}
-*/
-
-/**************************************************************************/
-/*                                                                        */
-/* Tableau                                                                */
-/*                                                                        */
-/**************************************************************************/
-
-/* Général */
 
 #rewards {
     background: rgba(255, 255, 255, 0.9);
@@ -143,14 +57,18 @@ td{
     border-top: 1px solid rgba(255, 105, 180, 0.1);
 }
 
-/* Princesses */
+/**************************************************************************/
+/*                                                                        */
+/* Princesses                                                                */
+/*                                                                        */
+/**************************************************************************/
 
 .princess{
     width: 90px;
     height: 90px;
     border-radius: 50%;
-/*    background: url(../img/princesses.jpg);*/
-    background: url(http://dummyimage.com/400/ccc/fff.png);
+    background: url(../img/princesses.jpg);
+/*    background: url(http://dummyimage.com/400/ccc/fff.png);*/
     background-size: 270px 270px
 }
 
@@ -182,7 +100,11 @@ td{
     background-position: bottom left;
 }
 
-/* Stickers */
+/**************************************************************************/
+/*                                                                        */
+/* Stickers                                                                */
+/*                                                                        */
+/**************************************************************************/
 
 .table input[type=checkbox] {
     display: none;
@@ -190,8 +112,8 @@ td{
 
 .table input[type=checkbox] + label {
     position: relative;
-/*    background: url('../img/dust.png') no-repeat;*/
-    background: url(http://dummyimage.com/400/ccc/fff.png);
+    background: url('../img/dust.png') no-repeat;
+/*    background: url(http://dummyimage.com/400/ccc/fff.png);*/
     background-size: 270px 270px;
     height: 90px;
     width: 90px;
@@ -257,28 +179,38 @@ td{
 /* Images stickers */
 
 #row1 input.on[type=checkbox] + label i{
-/*    background-image: url(../img/blancheneige.jpg);*/
-    background-image: url(http://dummyimage.com/400/444/fff.png);
+    background-image: url(../img/blancheneige.jpg);
+/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
 #row2 input.on[type=checkbox] + label i{
-/*    background-image: url(../img/cendrillon.jpg);*/
-    background-image: url(http://dummyimage.com/400/444/fff.png);
+    background-image: url(../img/cendrillon.jpg);
+/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
 #row3 input.on[type=checkbox] + label i{
-/*    background-image: url(../img/raiponce.jpg);*/
-    background-image: url(http://dummyimage.com/400/444/fff.png);
+    background-image: url(../img/raiponce.jpg);
+/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
 #row4 input.on[type=checkbox] + label i{
-/*    background-image: url(../img/frog.jpg);*/
-    background-image: url(http://dummyimage.com/400/444/fff.png);
+    background-image: url(../img/frog.jpg);
+/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
 #row5 input.on[type=checkbox] + label i{
-/*    background-image: url(../img/aurore.jpg);*/
-    background-image: url(http://dummyimage.com/400/444/fff.png);
+    background-image: url(../img/aurore.jpg);
+/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
+}
+
+#row6 input.on[type=checkbox] + label i{
+    background-image: url(../img/aurore.jpg);
+/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
+}
+
+#row7 input.on[type=checkbox] + label i{
+    background-image: url(../img/aurore.jpg);
+/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
 input.on.sticker1[type=checkbox] + label i{
@@ -295,6 +227,12 @@ input.on.sticker4[type=checkbox] + label i{
     background-position: center left !important;
 }
 input.on.sticker5[type=checkbox] + label i{
+    background-position: center center !important;
+}
+input.on.sticker6[type=checkbox] + label i{
+    background-position: center center !important;
+}
+input.on.sticker7[type=checkbox] + label i{
     background-position: center center !important;
 }
 
