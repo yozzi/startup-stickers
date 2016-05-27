@@ -384,21 +384,16 @@
         $data = serialize($data);
         
         $ret = update_user_option( get_current_user_id(), 'startup_stickers_values', $data);
-        $ret = update_user_option( get_current_user_id(), 'startup_stickers_values', $data);
-        if($ret === false) {
-            //die('Impossible d\'&eacute;crire dans le fichier <strong>values.txt</strong>');
-        }
-        else { ?>
+        ?>
             
-            <div id="messages" class="alert alert-success" role="alert">
-                <div class="container">    
-                    <div class="row">
-                        <div class="col-xs-12">Tableau mis &agrave; jour</div>
-                    </div>
-                </div>    
-            </div>
-        <?php }
-    }
+        <div id="messages" class="alert alert-success" role="alert">
+            <div class="container">    
+                <div class="row">
+                    <div class="col-xs-12">Tableau mis &agrave; jour</div>
+                </div>
+            </div>    
+        </div>
+    <?php }
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -450,22 +445,18 @@
         $ret1 = update_user_option( get_current_user_id(), 'startup_stickers_order', $data);
 
         $ret2 = update_user_option( get_current_user_id(), 'startup_stickers_values', '');
-        if($ret1 === false) {
-            //die('Impossible d\'&eacute;crire dans le fichier <strong>order.txt</strong>');
-        } elseif($ret2 === false) {
-            //die('Impossible d\'&eacute;crire dans le fichier <strong>values.txt</strong>');
-        }
-        else { ?>
+        ?>
             
-            <div id="messages" class="alert alert-success" role="alert">
-                <div class="container">    
-                    <div class="row">
-                        <div class="col-xs-12">Tableau mis &agrave; z&eacute;ro</div>
-                    </div>
-                </div>    
-            </div>
-        <?php }
-    }
+        <div id="messages" class="alert alert-success" role="alert">
+            <div class="container">    
+                <div class="row">
+                    <div class="col-xs-12">Tableau mis &agrave; z&eacute;ro</div>
+                </div>
+            </div>    
+        </div>
+
+    <?php }
+    
 
 /////////////////////////////////////////////////////////////////////////////
 //

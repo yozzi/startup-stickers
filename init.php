@@ -1,14 +1,13 @@
 <?php require_once 'inc/config.php' ?>
 
     <div id="page">
+        <?php require_once 'inc/values.php' ?>
         <?php if ( isset( $_POST ) && DEBUG == TRUE ) { ?>
             <div id="debug" class="alert alert-info" role="alert">
                 <div class="container">    
                     <div class="row">
                         <div class="col-xs-12">
-                                    <?php }  
-            require_once 'inc/values.php';
-        ?>
+        <?php } ?>
                             POST: <?php if ( isset( $_POST ) ) {print_r($_POST); } ?><br>
                             VALUES: <?php echo get_user_option('startup_stickers_values') ?><br>
                             ORDER: <?php echo get_user_option('startup_stickers_order') ?><br>
