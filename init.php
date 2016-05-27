@@ -9,9 +9,8 @@
                         <div class="col-xs-12">
         <?php } ?>
                             POST: <?php if ( isset( $_POST ) ) {print_r($_POST); } ?><br>
-                            VALUES: <?php echo get_user_option('startup_stickers_values') ?><br>
-                            ORDER: <?php echo get_user_option('startup_stickers_order') ?><br>
-                            ORDERTEST: <?php print_r($ordertest) ?>
+                            VALUES: <?php print_r(unserialize(get_user_option('startup_stickers_values'))) ?><br>
+                            ORDER: <?php print_r(unserialize(get_user_option('startup_stickers_order'))) ?><br>
                         </div>
                     </div>
                 </div>    
