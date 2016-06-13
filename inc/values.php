@@ -136,5 +136,5 @@
 
 
 
-    $values = unserialize(get_user_option( 'startup_stickers_values' ));
-    $order =  unserialize(get_user_option( 'startup_stickers_order' ));
+    $values = unserialize(get_user_option( 'startup_stickers_values', $user ));
+    $order =  unserialize(get_user_option( 'startup_stickers_order', $user ));

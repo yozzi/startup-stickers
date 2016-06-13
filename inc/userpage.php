@@ -26,7 +26,7 @@ function userpage_rewrite_catch() {
         
         
         function wpdev_before_after($content) {
-        $content = do_shortcode('[stickers]');
+        $content = do_shortcode('[stickers user=9]');
         return $content;
         }
         add_filter('the_content', 'wpdev_before_after');
