@@ -18,12 +18,15 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 require('inc/enqueues.php');
 
+require('inc/userpage.php');
+
 // Shortcode
 function startup_stickers_shortcode( $atts ) {
 
 	// Attributes
     $atts = shortcode_atts(array(
-            'bg' => ''
+            'bg' => '',
+            'user' => ''
         ), $atts);
     
 	// Code
