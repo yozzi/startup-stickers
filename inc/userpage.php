@@ -41,10 +41,10 @@ function userpage_rewrite_catch() {
 //        }
         //add_filter('the_title', 'userpage_title');
         
-        function limit_1_post($limit) {
-            return 'LIMIT 1';
-        }
-        add_filter('post_limits', 'limit_1_post' );
+//        function limit_1_post($limit) {
+//            return 'LIMIT 1';
+//        }
+//        add_filter('post_limits', 'limit_1_post' );
         
         include (TEMPLATEPATH . '/page.php');
         exit;
