@@ -35,26 +35,4 @@ function startup_stickers_shortcode( $atts ) {
     return ob_get_clean();    
 }
 add_shortcode( 'stickers', 'startup_stickers_shortcode' );
-
-// Shortcode UI
-function startup_stickers_shortcode_ui() {
-
-    shortcode_ui_register_for_shortcode(
-        'stickers',
-        array(
-            'label' => esc_html__( 'Stickers', 'startup-stickers' ),
-            'listItemImage' => 'dashicons-heart',
-            'attrs' => array(
-                array(
-                    'label' => esc_html__( 'Background', 'startup-stickers' ),
-                    'attr'  => 'bg',
-                    'type'  => 'color',
-                ),
-            ),
-        )
-    );
-};
-if ( function_exists( 'shortcode_ui_register_for_shortcode' ) ) {
-    add_action( 'init', 'startup_stickers_shortcode_ui');
-}
 ?>

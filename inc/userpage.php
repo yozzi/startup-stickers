@@ -11,7 +11,8 @@ add_filter( 'query_vars', 'userpage_rewrite_add_var' );
 function userpage_rewrite_rule() {
     add_rewrite_tag( '%member%', '([^&]+)' );
     add_rewrite_rule(
-        '^member/([^/]*)/?',
+        //'^member/([^/]*)/?',
+        '^([^/]*)/?',
         'index.php?member=$matches[1]',
         'top'
     );
@@ -21,12 +22,21 @@ add_action('init','userpage_rewrite_rule');
 // Catch the URL and redirect it to a template file
 function userpage_rewrite_catch() {
     global $wp_query;
+    
+    $user = get_userdatabylogin($wp_query->query_vars['member']);
+    
 
-    if ( array_key_exists( 'member', $wp_query->query_vars ) ) {
+    if ( array_key_exists( 'member', $wp_query->query_vars ) && $user ) {
+        
         
         
         function wpdev_before_after($content) {
-        $content = do_shortcode('[stickers user=9]');
+        
+        
+        global $wp_query;
+        $user = get_userdatabylogin($wp_query->query_vars['member']);   
+        $content = '[stickers user=' . $user->ID . ']';
+        $content = do_shortcode($content);
         return $content;
         }
         add_filter('the_content', 'wpdev_before_after');
@@ -35,6 +45,8 @@ function userpage_rewrite_catch() {
         include (TEMPLATEPATH . '/page.php');
         exit;
         
+    } elseif (array_key_exists( 'member', $wp_query->query_vars )) {
+        wp_redirect( home_url(), 301 ); exit;
     }
 }
 add_action( 'template_redirect', 'userpage_rewrite_catch' );
