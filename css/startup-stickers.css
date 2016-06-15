@@ -3,7 +3,8 @@
 /* Alertes                                                                */
 /*                                                                        */
 /**************************************************************************/
-#messages.alert{
+
+#messages.alert {
     margin-bottom: 0;
     background: rgba(255, 105, 180, 0.8);
     color: #fff;
@@ -11,7 +12,7 @@
     border-width: 0;
 }
 
-#debug.alert{
+#debug.alert {
     margin-bottom: 0;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
@@ -19,7 +20,6 @@
     border-width: 0;
     word-break: break-all;
 }
-
 /**************************************************************************/
 /*                                                                        */
 /* Général                                                                */
@@ -32,7 +32,7 @@
     margin-bottom: 20px;
 }
 
-table{
+table {
     margin-bottom: 0;
 }
 
@@ -43,7 +43,6 @@ th {
     color: rgba(255, 105, 180, 0.8);
 }
 
-
 th:first-child {
     width: 100px;
 }
@@ -52,54 +51,51 @@ th:first-child {
     text-align: left;
 }
 
-td{
+td {
     text-align: center;
     border-top: 1px solid rgba(255, 105, 180, 0.1);
 }
-
 /**************************************************************************/
 /*                                                                        */
 /* Princesses                                                                */
 /*                                                                        */
 /**************************************************************************/
 
-.princess{
+.princess {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     background: url(../img/princesses.jpg);
-/*    background: url(http://dummyimage.com/400/ccc/fff.png);*/
     background-size: 270px 270px
 }
 
-#row1 .princess{
+#row1 .princess {
     background-position: top right;
 }
 
-#row2 .princess{
+#row2 .princess {
     background-position: center right;
 }
 
-#row3 .princess{
+#row3 .princess {
     background-position: center center;
 }
 
-#row4 .princess{
+#row4 .princess {
     background-position: center left;
 }
 
-#row5 .princess{
+#row5 .princess {
     background-position: bottom right;
 }
 
-#row6 .princess{
+#row6 .princess {
     background-position: top center;
 }
 
-#row7 .princess{
+#row7 .princess {
     background-position: bottom left;
 }
-
 /**************************************************************************/
 /*                                                                        */
 /* Stickers                                                                */
@@ -113,7 +109,6 @@ td{
 .table input[type=checkbox] + label {
     position: relative;
     background: url('../img/dust.png') no-repeat;
-/*    background: url(http://dummyimage.com/400/ccc/fff.png);*/
     background-size: 270px 270px;
     height: 90px;
     width: 90px;
@@ -125,9 +120,8 @@ td{
     margin: 0 auto;
 }
 
-.table input[type=checkbox] + label i{
+.table input[type=checkbox] + label i {
     position: relative;
-/*    background: url(http://dummyimage.com/400/888/fff.png);*/
     background-size: 270px 270px;
     height: 90px;
     width: 90px;
@@ -139,7 +133,7 @@ td{
     margin: 0 auto;
 }
 
-.table input.on[type=checkbox] + label i{
+.table input.on[type=checkbox] + label i {
     opacity: 1;
 }
 
@@ -148,132 +142,128 @@ td{
     opacity: 1;
 }
 
-#row1 input[type=checkbox] + label{
+#row1 input[type=checkbox] + label {
     background-position: top center;
 }
 
-#row2 input[type=checkbox] + label{
+#row2 input[type=checkbox] + label {
     background-position: center left;
 }
 
-#row3 input[type=checkbox] + label{
+#row3 input[type=checkbox] + label {
     background-position: top right;
 }
 
-#row4 input[type=checkbox] + label{
+#row4 input[type=checkbox] + label {
     background-position: center center;
 }
 
-#row5 input[type=checkbox] + label{
+#row5 input[type=checkbox] + label {
     background-position: top left;
 }
 
-#row6 input[type=checkbox] + label{
+#row6 input[type=checkbox] + label {
     background-position: center right;
 }
 
-#row7 input[type=checkbox] + label{
+#row7 input[type=checkbox] + label {
     background-position: bottom left;
 }
-
 /* Images stickers */
 
-#row1 input.on[type=checkbox] + label i{
+#row1 input.on[type=checkbox] + label i {
     background-image: url(../img/blancheneige.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
-#row2 input.on[type=checkbox] + label i{
+#row2 input.on[type=checkbox] + label i {
     background-image: url(../img/cendrillon.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
-#row3 input.on[type=checkbox] + label i{
+#row3 input.on[type=checkbox] + label i {
     background-image: url(../img/raiponce.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
-#row4 input.on[type=checkbox] + label i{
+#row4 input.on[type=checkbox] + label i {
     background-image: url(../img/frog.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
-#row5 input.on[type=checkbox] + label i{
+#row5 input.on[type=checkbox] + label i {
     background-image: url(../img/aurore.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
-#row6 input.on[type=checkbox] + label i{
+#row6 input.on[type=checkbox] + label i {
     background-image: url(../img/aurore.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
-#row7 input.on[type=checkbox] + label i{
+#row7 input.on[type=checkbox] + label i {
     background-image: url(../img/aurore.jpg);
-/*    background-image: url(http://dummyimage.com/400/444/fff.png);*/
 }
 
-input.on.sticker1[type=checkbox] + label i{
+input.on.sticker1[type=checkbox] + label i {
     background-position: top left !important;
-    
 }
-input.on.sticker2[type=checkbox] + label i{
+
+input.on.sticker2[type=checkbox] + label i {
     background-position: top center !important;
 }
-input.on.sticker3[type=checkbox] + label i{
+
+input.on.sticker3[type=checkbox] + label i {
     background-position: top right !important;
 }
-input.on.sticker4[type=checkbox] + label i{
+
+input.on.sticker4[type=checkbox] + label i {
     background-position: center left !important;
 }
-input.on.sticker5[type=checkbox] + label i{
-    background-position: center center !important;
-}
-input.on.sticker6[type=checkbox] + label i{
-    background-position: center center !important;
-}
-input.on.sticker7[type=checkbox] + label i{
+
+input.on.sticker5[type=checkbox] + label i {
     background-position: center center !important;
 }
 
+input.on.sticker6[type=checkbox] + label i {
+    background-position: center center !important;
+}
+
+input.on.sticker7[type=checkbox] + label i {
+    background-position: center center !important;
+}
 /**************************************************************************/
 /*                                                                        */
 /* Popover                                                                */
 /*                                                                        */
 /**************************************************************************/
+
 .table .popover-title {
     background-color: pink;
     color: #fff;
     font-size: 28px;
-    text-align:center;
+    text-align: center;
 }
 
 .table .popover-content {
     background-color: #fff;
     color: pink;
     padding: 25px;
-    text-align:center;
+    text-align: center;
 }
-
 /**************************************************************************/
 /*                                                                        */
 /* Soumission                                                             */
 /*                                                                        */
 /**************************************************************************/
 
-#form-submition{
+#form-submition {
     text-align: right;
     padding-bottom: 20px;
 }
 
-#form-submition .popover .popover-title{
+#form-submition .popover .popover-title {
     display: none;
 }
 
-#form-submition .popover .popover-content{
+#form-submition .popover .popover-content {
     padding: 5px;
 }
 
-#form-submition .popover .btn{
+#form-submition .popover .btn {
     text-align: left;
 }
