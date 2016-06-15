@@ -123,10 +123,10 @@ table{
 }
 
 th {
-    border-bottom-color: rgba(255, 105, 180, 0.1);
+/*    border-bottom-color: rgba(255, 105, 180, 0.1);*/
     border-bottom-width: 1px;
     text-align: center;
-    color: rgba(255, 105, 180, 0.8);
+/*    color: rgba(255, 105, 180, 0.8);*/
 }
 
 
@@ -140,7 +140,7 @@ th:first-child {
 
 td{
     text-align: center;
-    border-top: 1px solid rgba(255, 105, 180, 0.1);
+/*    border-top: 1px solid rgba(255, 105, 180, 0.1);*/
 }
 
 /* Princesses */
@@ -148,7 +148,7 @@ td{
 .princess{
     width: 90px;
     height: 90px;
-    border-radius: 50%;
+/*    border-radius: 50%;*/
 /*    background: url(../img/princesses.jpg);*/
     background: url(http://dummyimage.com/400/ccc/fff.png);
     background-size: 270px 270px
@@ -196,7 +196,7 @@ td{
     height: 90px;
     width: 90px;
     display: block;
-    border-radius: 50%;
+/*    border-radius: 50%;*/
     transition: opacity 0.4s;
     cursor: pointer;
     opacity: 0.2;
@@ -210,7 +210,7 @@ td{
     height: 90px;
     width: 90px;
     display: block;
-    border-radius: 50%;
+/*    border-radius: 50%;*/
     transition: opacity 2s;
     cursor: pointer;
     opacity: 0;
@@ -304,7 +304,7 @@ input.on.sticker5[type=checkbox] + label i{
 /*                                                                        */
 /**************************************************************************/
 .table .popover-title {
-    background-color: pink;
+/*    background-color: pink;*/
     color: #fff;
     font-size: 28px;
     text-align:center;
@@ -312,7 +312,7 @@ input.on.sticker5[type=checkbox] + label i{
 
 .table .popover-content {
     background-color: #fff;
-    color: pink;
+/*    color: pink;*/
     padding: 25px;
     text-align:center;
 }
