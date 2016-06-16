@@ -9,33 +9,23 @@ $(document).ready(function ($) {
 
     $('.princess').popover();
     
-    $('#login').popover({ 
-        html : true,
-        container: '.navbar',
-//        viewport: '.container',
-        trigger: "click",
-        content: function() {
-          return $('#popover_content_wrapper').html();
-        }
-    });
-
     $('[data-toggle="confirmation"]').confirmation({
         onConfirm: function () {
             $('form').submit();
         },
         btnOkClass: 'btn btn-danger btn-sm btn-block',
         btnOkLabel: 'Confirmer',
-        btnOkIcon: 'glyphicon glyphicon-ok',
+        btnOkIcon: 'fa fa-check',
         btnCancelClass: 'btn btn-default btn-sm btn-block',
         btnCancelLabel: 'Annuler',
-        btnCancelIcon: 'glyphicon glyphicon-remove',
+        btnCancelIcon: 'fa fa-remove',
         singleton: true,
         popout: true,
     });
     
-    $('#fullscreen').click(function () {
-        if (screenfull.enabled) {
-            screenfull.toggle($('#page')[0]);
-        }
-    });
+//    $('#fullscreen').click(function () {
+//        if (screenfull.enabled) {
+//            screenfull.toggle($('#page')[0]);
+//        }
+//    });
 });
