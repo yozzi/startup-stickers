@@ -107,7 +107,7 @@
                 </label>
             </td>
             <td>
-                <input id="cel33" name="value33" class="form-control<?php if ( $values[3][3] ) { echo ' on'; }; echo ' sticker' . $order[3][3]; ?>" type="checkbox" <?php if ( $values3[3][3] ) { echo ' checked'; } ?>>
+                <input id="cel33" name="value33" class="form-control<?php if ( $values[3][3] ) { echo ' on'; }; echo ' sticker' . $order[3][3]; ?>" type="checkbox" <?php if ( $values[3][3] ) { echo ' checked'; } ?>>
                 <label for="cel33"><i></i>
                 </label>
             </td>
