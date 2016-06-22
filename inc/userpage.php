@@ -21,14 +21,16 @@ add_action('init','userpage_rewrite_rule');
 // Catch the URL and redirect it to a template file
 function userpage_rewrite_catch() {
     global $wp_query;
-    $user = get_user_by('login',$wp_query->query_vars['member']);
+    if ( isset($wp_query->query_vars['member']) ) {
+        $user = get_user_by('login',$wp_query->query_vars['member']);
     
-    if ( array_key_exists( 'member', $wp_query->query_vars ) && $user ) {
-        include (TEMPLATEPATH . '/page-stickers.php');
-        exit;
-        
-    } elseif (array_key_exists( 'member', $wp_query->query_vars )) {
-        wp_redirect( home_url(), 301 ); exit;
+        if ( array_key_exists( 'member', $wp_query->query_vars ) && $user ) {
+            include (TEMPLATEPATH . '/page-stickers.php');
+            exit;
+
+        } elseif (array_key_exists( 'member', $wp_query->query_vars )) {
+            wp_redirect( home_url(), 301 ); exit;
+        }
     }
 }
 add_action( 'template_redirect', 'userpage_rewrite_catch' );
