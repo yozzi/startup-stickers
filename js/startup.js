@@ -1,17 +1,17 @@
-$(document).ready(function ($) {
-    $('#rewards.logged input[type=checkbox]').click(function () {
-        $(this).toggleClass('on');
+jQuery(document).ready(function (jQuery) {
+    jQuery('#rewards.logged input[type=checkbox]').click(function () {
+        jQuery(this).toggleClass('on');
     });
 
-    $("#messages").delay(2000).fadeTo(1000, 0).slideUp(500, function () {
-        $("#messages").alert('close');
+    jQuery("#messages").delay(2000).fadeTo(1000, 0).slideUp(500, function () {
+        jQuery("#messages").alert('close');
     });
 
-    $('.princess').popover();
+    jQuery('.princess').popover();
     
-    $('[data-toggle="confirmation"]').confirmation({
+    jQuery('[data-toggle="confirmation"]').confirmation({
         onConfirm: function () {
-            $('form').submit();
+            jQuery('form').submit();
         },
         btnOkClass: 'btn btn-danger btn-sm btn-block',
         btnOkLabel: 'Confirmer',
